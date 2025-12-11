@@ -296,6 +296,39 @@
       "created_at": "2025-12-11T16:01:10.097213-05:00",
       "updated_at": "2025-12-11T16:01:10.097213-05:00",
       "metadata_json": "{\"branch\":\"feature/media-collection-viewer\",\"confidence\":100,\"prompt\":\"https://github.com/notactuallytreyanastasio/pines_tv/pull/1\"}"
+    },
+    {
+      "id": 28,
+      "change_id": "802f83c8-b3dc-426c-86af-2aa257d988b6",
+      "node_type": "observation",
+      "title": "React app needed explicit React imports for JSX",
+      "description": null,
+      "status": "pending",
+      "created_at": "2025-12-11T16:03:25.693959-05:00",
+      "updated_at": "2025-12-11T16:03:25.693959-05:00",
+      "metadata_json": "{\"branch\":\"feature/media-collection-viewer\",\"confidence\":95}"
+    },
+    {
+      "id": 29,
+      "change_id": "4bc6b0ef-45b9-4684-a0ba-76ce34beb555",
+      "node_type": "action",
+      "title": "Add React imports to fix JSX runtime error",
+      "description": null,
+      "status": "pending",
+      "created_at": "2025-12-11T16:03:26.845432-05:00",
+      "updated_at": "2025-12-11T16:03:26.845432-05:00",
+      "metadata_json": "{\"branch\":\"feature/media-collection-viewer\",\"confidence\":100}"
+    },
+    {
+      "id": 30,
+      "change_id": "62e51ccd-0423-44d3-8473-0cd0659a42e8",
+      "node_type": "outcome",
+      "title": "React app now renders correctly",
+      "description": null,
+      "status": "pending",
+      "created_at": "2025-12-11T16:03:29.392990-05:00",
+      "updated_at": "2025-12-11T16:03:29.392990-05:00",
+      "metadata_json": "{\"branch\":\"feature/media-collection-viewer\",\"confidence\":100}"
     }
   ],
   "edges": [
@@ -584,6 +617,28 @@
       "weight": 1.0,
       "rationale": "Documentation led to PR creation",
       "created_at": "2025-12-11T16:01:11.612699-05:00"
+    },
+    {
+      "id": 27,
+      "from_node_id": 28,
+      "to_node_id": 29,
+      "from_change_id": "802f83c8-b3dc-426c-86af-2aa257d988b6",
+      "to_change_id": "4bc6b0ef-45b9-4684-a0ba-76ce34beb555",
+      "edge_type": "leads_to",
+      "weight": 1.0,
+      "rationale": "Observation led to fix",
+      "created_at": "2025-12-11T16:03:28.141082-05:00"
+    },
+    {
+      "id": 28,
+      "from_node_id": 29,
+      "to_node_id": 30,
+      "from_change_id": "4bc6b0ef-45b9-4684-a0ba-76ce34beb555",
+      "to_change_id": "62e51ccd-0423-44d3-8473-0cd0659a42e8",
+      "edge_type": "leads_to",
+      "weight": 1.0,
+      "rationale": "Fix applied successfully",
+      "created_at": "2025-12-11T16:03:30.470294-05:00"
     }
   ]
 }
