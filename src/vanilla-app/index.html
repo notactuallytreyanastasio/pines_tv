@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mark Pines Archive - Vanilla JS</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1>Mark Pines Archive</h1>
+      <p class="subtitle">A collection of audio, video and related materials</p>
+      <div class="header-actions">
+        <button id="refresh-btn" class="btn btn-secondary">Refresh Data</button>
+        <button id="clear-cache-btn" class="btn btn-secondary">Clear Cache</button>
+        <div id="cache-stats" class="cache-stats"></div>
+      </div>
+    </header>
+
+    <div class="filters">
+      <input 
+        type="search" 
+        id="search-input" 
+        placeholder="Search videos..." 
+        class="search-input"
+      />
+      <div class="stats">
+        <span id="item-count">Loading...</span>
+      </div>
+    </div>
+
+    <div id="loading" class="loading">
+      <div class="spinner"></div>
+      <p>Loading collection...</p>
+    </div>
+
+    <div id="error" class="error" style="display: none;"></div>
+
+    <div id="grid" class="grid"></div>
+  </div>
+
+  <!-- Load dependencies -->
+  <script src="../lib/archive-client.js"></script>
+  <script src="../cache/local-cache.js"></script>
+  <script src="../lib/cached-archive-client.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+{
+  "version": "1.0",
+  "author": null,
+  "branch": "feature/media-collection-viewer",
+  "created_at": "2025-12-11T16:14:03.314302-05:00",
+  "base_commit": null,
+  "nodes": [
+    {
+      "change_id": "3181ec74-b566-47b7-b2b6-122f82444122",
+      "node_type": "decision",
+      "title": "Alternative UI design style",
+      "description": null,
+      "status": "pending",
+      "metadata_json": "{\"branch\":\"feature/alternative-ui-design\",\"confidence\":80,\"prompt\":\"Choose between dark mode minimalist vs colorful maximalist design\"}",
+      "created_at": "2025-12-11T15:52:26.837017-05:00"
+    },
+    {
+      "change_id": "0eae6d74-bd89-48b0-a2ec-e20395a1d026",
+      "node_type": "action",
+      "title": "Implement dark mode minimalist design",
+      "description": null,
+      "status": "pending",
+      "metadata_json": "{\"branch\":\"feature/alternative-ui-design\",\"confidence\":90,\"prompt\":\"Clean, modern dark theme with focus on content\"}",
+      "created_at": "2025-12-11T15:52:33.754541-05:00"
+    },
+    {
+      "change_id": "fa6856e4-165b-41ae-b3eb-09a70794946f",
+      "node_type": "outcome",
+      "title": "Dark minimalist UI design completed",
+      "description": null,
+      "status": "pending",
+      "metadata_json": "{\"branch\":\"feature/alternative-ui-design\",\"confidence\":95,\"files\":[\"src/vanilla-app/styles.css\"]}",
+      "created_at": "2025-12-11T15:53:26.758471-05:00"
+    }
+  ],
+  "edges": [
+    {
+      "from_change_id": "09acb64b-ea0c-4b64-8d9e-4e7853237c84",
+      "to_change_id": "3181ec74-b566-47b7-b2b6-122f82444122",
+      "edge_type": "leads_to",
+      "rationale": "Design decision for alternative UI"
+    },
+    {
+      "from_change_id": "3181ec74-b566-47b7-b2b6-122f82444122",
+      "to_change_id": "0eae6d74-bd89-48b0-a2ec-e20395a1d026",
+      "edge_type": "chosen",
+      "rationale": "Selected dark minimalist for better video focus"
+    },
+    {
+      "from_change_id": "0eae6d74-bd89-48b0-a2ec-e20395a1d026",
+      "to_change_id": "fa6856e4-165b-41ae-b3eb-09a70794946f",
+      "edge_type": "leads_to",
+      "rationale": "Design implementation completed"
+    }
+  ]
+}
