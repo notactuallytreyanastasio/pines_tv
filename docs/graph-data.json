@@ -164,6 +164,50 @@
       "created_at": "2025-12-11T15:50:51.807182-05:00",
       "updated_at": "2025-12-11T15:50:51.807182-05:00",
       "metadata_json": "{\"branch\":\"feature/media-collection-viewer\",\"confidence\":90,\"files\":[\"src/react-app/src/App.jsx\",\"src/react-app/src/components/\"]}"
+    },
+    {
+      "id": 16,
+      "change_id": "09acb64b-ea0c-4b64-8d9e-4e7853237c84",
+      "node_type": "action",
+      "title": "Create alternative UI design on separate branch",
+      "description": null,
+      "status": "pending",
+      "created_at": "2025-12-11T15:52:17.941060-05:00",
+      "updated_at": "2025-12-11T15:52:17.941060-05:00",
+      "metadata_json": "{\"branch\":\"feature/media-collection-viewer\",\"confidence\":85}"
+    },
+    {
+      "id": 17,
+      "change_id": "3181ec74-b566-47b7-b2b6-122f82444122",
+      "node_type": "decision",
+      "title": "Alternative UI design style",
+      "description": null,
+      "status": "pending",
+      "created_at": "2025-12-11T15:52:26.837017-05:00",
+      "updated_at": "2025-12-11T15:52:26.837017-05:00",
+      "metadata_json": "{\"branch\":\"feature/alternative-ui-design\",\"confidence\":80,\"prompt\":\"Choose between dark mode minimalist vs colorful maximalist design\"}"
+    },
+    {
+      "id": 18,
+      "change_id": "0eae6d74-bd89-48b0-a2ec-e20395a1d026",
+      "node_type": "action",
+      "title": "Implement dark mode minimalist design",
+      "description": null,
+      "status": "pending",
+      "created_at": "2025-12-11T15:52:33.754541-05:00",
+      "updated_at": "2025-12-11T15:52:33.754541-05:00",
+      "metadata_json": "{\"branch\":\"feature/alternative-ui-design\",\"confidence\":90,\"prompt\":\"Clean, modern dark theme with focus on content\"}"
+    },
+    {
+      "id": 19,
+      "change_id": "fa6856e4-165b-41ae-b3eb-09a70794946f",
+      "node_type": "outcome",
+      "title": "Dark minimalist UI design completed",
+      "description": null,
+      "status": "pending",
+      "created_at": "2025-12-11T15:53:26.758471-05:00",
+      "updated_at": "2025-12-11T15:53:26.758471-05:00",
+      "metadata_json": "{\"branch\":\"feature/alternative-ui-design\",\"confidence\":95,\"files\":[\"src/vanilla-app/styles.css\"]}"
     }
   ],
   "edges": [
@@ -331,6 +375,50 @@
       "weight": 1.0,
       "rationale": "React implementation completed",
       "created_at": "2025-12-11T15:50:53.264278-05:00"
+    },
+    {
+      "id": 16,
+      "from_node_id": 15,
+      "to_node_id": 16,
+      "from_change_id": "6c7cd93c-27b2-4fa7-b907-069f681ad8e4",
+      "to_change_id": "09acb64b-ea0c-4b64-8d9e-4e7853237c84",
+      "edge_type": "leads_to",
+      "weight": 1.0,
+      "rationale": "Next step: alternative design",
+      "created_at": "2025-12-11T15:52:19.506501-05:00"
+    },
+    {
+      "id": 17,
+      "from_node_id": 16,
+      "to_node_id": 17,
+      "from_change_id": "09acb64b-ea0c-4b64-8d9e-4e7853237c84",
+      "to_change_id": "3181ec74-b566-47b7-b2b6-122f82444122",
+      "edge_type": "leads_to",
+      "weight": 1.0,
+      "rationale": "Design decision for alternative UI",
+      "created_at": "2025-12-11T15:52:27.716647-05:00"
+    },
+    {
+      "id": 18,
+      "from_node_id": 17,
+      "to_node_id": 18,
+      "from_change_id": "3181ec74-b566-47b7-b2b6-122f82444122",
+      "to_change_id": "0eae6d74-bd89-48b0-a2ec-e20395a1d026",
+      "edge_type": "chosen",
+      "weight": 1.0,
+      "rationale": "Selected dark minimalist for better video focus",
+      "created_at": "2025-12-11T15:52:35.738585-05:00"
+    },
+    {
+      "id": 19,
+      "from_node_id": 18,
+      "to_node_id": 19,
+      "from_change_id": "0eae6d74-bd89-48b0-a2ec-e20395a1d026",
+      "to_change_id": "fa6856e4-165b-41ae-b3eb-09a70794946f",
+      "edge_type": "leads_to",
+      "weight": 1.0,
+      "rationale": "Design implementation completed",
+      "created_at": "2025-12-11T15:53:28.192418-05:00"
     }
   ]
 }
