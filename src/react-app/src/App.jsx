@@ -1,4 +1,4 @@
-import { useState, useEffect, useMemo } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import ArchiveClient from './lib/archive-client.js';
 import LocalCache from './cache/local-cache.js';
 import CachedArchiveClient from './lib/cached-archive-client.js';

@@ -1,3 +1,4 @@
+import React from 'react';
 import './SearchBar.css';
 
 function SearchBar({ searchTerm, onSearchChange, totalItems, filteredItems }) {
