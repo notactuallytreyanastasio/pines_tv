@@ -285,6 +285,17 @@
       "created_at": "2025-12-11T15:59:38.821883-05:00",
       "updated_at": "2025-12-11T15:59:38.821883-05:00",
       "metadata_json": "{\"branch\":\"feature/media-collection-viewer\",\"confidence\":100}"
+    },
+    {
+      "id": 27,
+      "change_id": "6eac9f20-c629-4552-9e5e-5f5c606b936f",
+      "node_type": "outcome",
+      "title": "PR #1 created with comprehensive decision analysis",
+      "description": null,
+      "status": "pending",
+      "created_at": "2025-12-11T16:01:10.097213-05:00",
+      "updated_at": "2025-12-11T16:01:10.097213-05:00",
+      "metadata_json": "{\"branch\":\"feature/media-collection-viewer\",\"confidence\":100,\"prompt\":\"https://github.com/notactuallytreyanastasio/pines_tv/pull/1\"}"
     }
   ],
   "edges": [
@@ -562,6 +573,17 @@
       "weight": 1.0,
       "rationale": "Documentation completed",
       "created_at": "2025-12-11T15:59:41.231141-05:00"
+    },
+    {
+      "id": 26,
+      "from_node_id": 26,
+      "to_node_id": 27,
+      "from_change_id": "cde34b42-4269-42ae-a9f5-67a71e6b61d0",
+      "to_change_id": "6eac9f20-c629-4552-9e5e-5f5c606b936f",
+      "edge_type": "leads_to",
+      "weight": 1.0,
+      "rationale": "Documentation led to PR creation",
+      "created_at": "2025-12-11T16:01:11.612699-05:00"
     }
   ]
 }

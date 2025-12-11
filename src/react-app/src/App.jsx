@@ -24,21 +24,25 @@ function App() {
 
   const loadCollection = async () => {
     try {
+      console.log('Starting to load collection...');
       setLoading(true);
       setError(null);
 
+      console.log('Fetching items from archive.org...');
       const data = await client.getAllCollectionItems(collectionId, {
         fields: ['identifier', 'title', 'description', 'mediatype'],
         rows: 100
       });
 
+      console.log('Received data:', data.length, 'items');
       setItems(data);
       updateCacheStats();
     } catch (err) {
       console.error('Error loading collection:', err);
-      setError('Failed to load collection. Please try again.');
+      setError(`Failed to load collection: ${err.message}`);
     } finally {
       setLoading(false);
+      console.log('Loading complete');
     }
   };
 
@@ -60,6 +64,7 @@ function App() {
   };
 
   useEffect(() => {
+    console.log('App mounted, loading collection...');
     loadCollection();
   }, []);
 
@@ -75,6 +80,8 @@ function App() {
       return title.includes(term) || description.includes(term);
     });
   }, [items, searchTerm]);
+
+  console.log('Render - loading:', loading, 'error:', error, 'items:', items.length);
 
   return (
     <div className="app">
