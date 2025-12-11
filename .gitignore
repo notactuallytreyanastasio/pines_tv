@@ -1,0 +1,8 @@
+# Deciduous database (local)
+.deciduous/
+
+# Dependencies
+node_modules/
+
+# Build outputs
+dist/
