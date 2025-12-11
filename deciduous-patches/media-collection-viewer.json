@@ -1,0 +1,431 @@
+{
+  "version": "1.0",
+  "author": null,
+  "branch": "feature/media-collection-viewer",
+  "created_at": "2025-12-11T16:13:57.499240-05:00",
+  "base_commit": null,
+  "nodes": [
+    {
+      "change_id": "c3f00428-8e35-4e6e-bb3e-bac6d2cee5a3",
+      "node_type": "action",
+      "title": "Create feature branch feature/media-collection-viewer",
+      "description": null,
+      "status": "pending",
+      "metadata_json": "{\"branch\":\"feature/media-collection-viewer\",\"confidence\":95}",
+      "created_at": "2025-12-11T15:44:04.312673-05:00"
+    },
+    {
+      "change_id": "210586dc-b5e4-4123-b4ee-4e09587b30dd",
+      "node_type": "outcome",
+      "title": "Feature branch created successfully",
+      "description": null,
+      "status": "pending",
+      "metadata_json": "{\"branch\":\"feature/media-collection-viewer\",\"confidence\":100}",
+      "created_at": "2025-12-11T15:44:10.706293-05:00"
+    },
+    {
+      "change_id": "e8e2143c-004a-42aa-a37b-c49a0492c093",
+      "node_type": "observation",
+      "title": "Archive.org API provides JSON endpoint for collection queries with metadata",
+      "description": null,
+      "status": "pending",
+      "metadata_json": "{\"branch\":\"feature/media-collection-viewer\",\"confidence\":90,\"prompt\":\"Discovered API: https://archive.org/advancedsearch.php with collection:markpines query returns 1345 items with identifier, title, description, mediatype fields\"}",
+      "created_at": "2025-12-11T15:44:22.833186-05:00"
+    },
+    {
+      "change_id": "8680b9e3-172a-4c5d-8fa7-8aa3b6cefd98",
+      "node_type": "action",
+      "title": "Choose standalone API client architecture",
+      "description": null,
+      "status": "pending",
+      "metadata_json": "{\"branch\":\"feature/media-collection-viewer\",\"confidence\":90,\"prompt\":\"Going with separated concern - reusable, testable, framework-agnostic API client\"}",
+      "created_at": "2025-12-11T15:44:29.769064-05:00"
+    },
+    {
+      "change_id": "71c66181-9f9c-4871-b591-cbcf56b39a11",
+      "node_type": "action",
+      "title": "Create project structure with API client, cache, and framework implementations",
+      "description": null,
+      "status": "pending",
+      "metadata_json": "{\"branch\":\"feature/media-collection-viewer\",\"confidence\":85}",
+      "created_at": "2025-12-11T15:44:37.749401-05:00"
+    },
+    {
+      "change_id": "a4432bb1-33ff-4276-9180-015034d22102",
+      "node_type": "outcome",
+      "title": "Created standalone API client library with caching",
+      "description": null,
+      "status": "pending",
+      "metadata_json": "{\"branch\":\"feature/media-collection-viewer\",\"confidence\":95,\"files\":[\"src/lib/archive-client.js\",\"src/cache/local-cache.js\",\"src/lib/cached-archive-client.js\"]}",
+      "created_at": "2025-12-11T15:45:46.028770-05:00"
+    },
+    {
+      "change_id": "37ffebf3-9433-459c-8b35-f094f42792e5",
+      "node_type": "action",
+      "title": "Build vanilla JS implementation with grid UI",
+      "description": null,
+      "status": "pending",
+      "metadata_json": "{\"branch\":\"feature/media-collection-viewer\",\"confidence\":85}",
+      "created_at": "2025-12-11T15:45:52.171589-05:00"
+    },
+    {
+      "change_id": "f24d1916-b87b-4d59-8bba-dfab494d20a0",
+      "node_type": "action",
+      "title": "Test vanilla JS implementation",
+      "description": null,
+      "status": "pending",
+      "metadata_json": "{\"branch\":\"feature/media-collection-viewer\",\"confidence\":80}",
+      "created_at": "2025-12-11T15:47:02.941865-05:00"
+    },
+    {
+      "change_id": "343534b9-754a-47b7-a5a6-6d5d21356000",
+      "node_type": "outcome",
+      "title": "Vanilla JS implementation working",
+      "description": null,
+      "status": "pending",
+      "metadata_json": "{\"branch\":\"feature/media-collection-viewer\",\"confidence\":90,\"files\":[\"src/vanilla-app/index.html\",\"src/vanilla-app/app.js\",\"src/vanilla-app/styles.css\"]}",
+      "created_at": "2025-12-11T15:47:37.880011-05:00"
+    },
+    {
+      "change_id": "cf545fd9-bee9-4ac0-a277-398ee0180272",
+      "node_type": "action",
+      "title": "Build React implementation with hooks and modern UI",
+      "description": null,
+      "status": "pending",
+      "metadata_json": "{\"branch\":\"feature/media-collection-viewer\",\"confidence\":85}",
+      "created_at": "2025-12-11T15:47:40.521749-05:00"
+    },
+    {
+      "change_id": "6c7cd93c-27b2-4fa7-b907-069f681ad8e4",
+      "node_type": "outcome",
+      "title": "React implementation complete with components and hooks",
+      "description": null,
+      "status": "pending",
+      "metadata_json": "{\"branch\":\"feature/media-collection-viewer\",\"confidence\":90,\"files\":[\"src/react-app/src/App.jsx\",\"src/react-app/src/components/\"]}",
+      "created_at": "2025-12-11T15:50:51.807182-05:00"
+    },
+    {
+      "change_id": "09acb64b-ea0c-4b64-8d9e-4e7853237c84",
+      "node_type": "action",
+      "title": "Create alternative UI design on separate branch",
+      "description": null,
+      "status": "pending",
+      "metadata_json": "{\"branch\":\"feature/media-collection-viewer\",\"confidence\":85}",
+      "created_at": "2025-12-11T15:52:17.941060-05:00"
+    },
+    {
+      "change_id": "34909cef-5c45-4be3-831a-2a52f54304a4",
+      "node_type": "outcome",
+      "title": "Project complete with documentation",
+      "description": null,
+      "status": "pending",
+      "metadata_json": "{\"branch\":\"feature/media-collection-viewer\",\"confidence\":100,\"files\":[\"IMPLEMENTATION_SUMMARY.md\",\"README.md\"]}",
+      "created_at": "2025-12-11T15:54:47.359797-05:00"
+    },
+    {
+      "change_id": "4b673695-ebc9-445a-9815-1b8ca5483853",
+      "node_type": "observation",
+      "title": "GitHub remote configured and branches pushed",
+      "description": null,
+      "status": "pending",
+      "metadata_json": "{\"branch\":\"feature/media-collection-viewer\",\"confidence\":100,\"prompt\":\"Repository: notactuallytreyanastasio/pines_tv.git\"}",
+      "created_at": "2025-12-11T15:56:05.850527-05:00"
+    },
+    {
+      "change_id": "f88bbcc9-32a8-46d8-bc4f-962f00e5395b",
+      "node_type": "observation",
+      "title": "React app had module import issue - needed ES module exports",
+      "description": null,
+      "status": "pending",
+      "metadata_json": "{\"branch\":\"feature/media-collection-viewer\",\"confidence\":90}",
+      "created_at": "2025-12-11T15:57:17.583125-05:00"
+    },
+    {
+      "change_id": "34a31ded-5777-4eaa-906f-37f4d720840b",
+      "node_type": "action",
+      "title": "Fix module exports for React/Vite",
+      "description": null,
+      "status": "pending",
+      "metadata_json": "{\"branch\":\"feature/media-collection-viewer\",\"confidence\":95}",
+      "created_at": "2025-12-11T15:57:18.857106-05:00"
+    },
+    {
+      "change_id": "9efddd1d-f46d-482e-8835-a29305365280",
+      "node_type": "outcome",
+      "title": "React app now loads correctly",
+      "description": null,
+      "status": "pending",
+      "metadata_json": "{\"branch\":\"feature/media-collection-viewer\",\"confidence\":95}",
+      "created_at": "2025-12-11T15:57:25.587997-05:00"
+    },
+    {
+      "change_id": "cca6bc60-2799-44a7-9ea1-d32dc32cd3e1",
+      "node_type": "action",
+      "title": "Document decision analysis for PR",
+      "description": null,
+      "status": "pending",
+      "metadata_json": "{\"branch\":\"feature/media-collection-viewer\",\"confidence\":95,\"files\":[\"IMPLEMENTATION_SUMMARY.md\"]}",
+      "created_at": "2025-12-11T15:59:37.601063-05:00"
+    },
+    {
+      "change_id": "cde34b42-4269-42ae-a9f5-67a71e6b61d0",
+      "node_type": "outcome",
+      "title": "Comprehensive PR documentation complete with recommendations",
+      "description": null,
+      "status": "pending",
+      "metadata_json": "{\"branch\":\"feature/media-collection-viewer\",\"confidence\":100}",
+      "created_at": "2025-12-11T15:59:38.821883-05:00"
+    },
+    {
+      "change_id": "6eac9f20-c629-4552-9e5e-5f5c606b936f",
+      "node_type": "outcome",
+      "title": "PR #1 created with comprehensive decision analysis",
+      "description": null,
+      "status": "pending",
+      "metadata_json": "{\"branch\":\"feature/media-collection-viewer\",\"confidence\":100,\"prompt\":\"https://github.com/notactuallytreyanastasio/pines_tv/pull/1\"}",
+      "created_at": "2025-12-11T16:01:10.097213-05:00"
+    },
+    {
+      "change_id": "802f83c8-b3dc-426c-86af-2aa257d988b6",
+      "node_type": "observation",
+      "title": "React app needed explicit React imports for JSX",
+      "description": null,
+      "status": "pending",
+      "metadata_json": "{\"branch\":\"feature/media-collection-viewer\",\"confidence\":95}",
+      "created_at": "2025-12-11T16:03:25.693959-05:00"
+    },
+    {
+      "change_id": "4bc6b0ef-45b9-4684-a0ba-76ce34beb555",
+      "node_type": "action",
+      "title": "Add React imports to fix JSX runtime error",
+      "description": null,
+      "status": "pending",
+      "metadata_json": "{\"branch\":\"feature/media-collection-viewer\",\"confidence\":100}",
+      "created_at": "2025-12-11T16:03:26.845432-05:00"
+    },
+    {
+      "change_id": "62e51ccd-0423-44d3-8473-0cd0659a42e8",
+      "node_type": "outcome",
+      "title": "React app now renders correctly",
+      "description": null,
+      "status": "pending",
+      "metadata_json": "{\"branch\":\"feature/media-collection-viewer\",\"confidence\":100}",
+      "created_at": "2025-12-11T16:03:29.392990-05:00"
+    },
+    {
+      "change_id": "3413c2a7-6447-4a9e-864a-dd97be5d8062",
+      "node_type": "observation",
+      "title": "Both implementations fully functional and tested",
+      "description": null,
+      "status": "pending",
+      "metadata_json": "{\"branch\":\"feature/media-collection-viewer\",\"confidence\":100}",
+      "created_at": "2025-12-11T16:08:35.294701-05:00"
+    },
+    {
+      "change_id": "a3b696eb-a353-4327-a12c-d6817ae38533",
+      "node_type": "outcome",
+      "title": "PR updated with complete decision story and audit",
+      "description": null,
+      "status": "pending",
+      "metadata_json": "{\"branch\":\"feature/media-collection-viewer\",\"confidence\":100}",
+      "created_at": "2025-12-11T16:10:16.120152-05:00"
+    },
+    {
+      "change_id": "e6e31eb0-6d24-4778-b52d-52af4f25fe74",
+      "node_type": "outcome",
+      "title": "Project ready for stakeholder review and decision",
+      "description": null,
+      "status": "pending",
+      "metadata_json": "{\"branch\":\"feature/media-collection-viewer\",\"confidence\":100}",
+      "created_at": "2025-12-11T16:10:18.556329-05:00"
+    }
+  ],
+  "edges": [
+    {
+      "from_change_id": "1354f985-33c9-4b29-94b6-39db371b409e",
+      "to_change_id": "c3f00428-8e35-4e6e-bb3e-bac6d2cee5a3",
+      "edge_type": "leads_to",
+      "rationale": "Action to start implementing goal"
+    },
+    {
+      "from_change_id": "c3f00428-8e35-4e6e-bb3e-bac6d2cee5a3",
+      "to_change_id": "210586dc-b5e4-4123-b4ee-4e09587b30dd",
+      "edge_type": "leads_to",
+      "rationale": "Action completed"
+    },
+    {
+      "from_change_id": "e36ee10a-3f65-4a87-a7bb-b7c8ed451680",
+      "to_change_id": "e8e2143c-004a-42aa-a37b-c49a0492c093",
+      "edge_type": "leads_to",
+      "rationale": "API observation informs architecture decision"
+    },
+    {
+      "from_change_id": "e36ee10a-3f65-4a87-a7bb-b7c8ed451680",
+      "to_change_id": "8680b9e3-172a-4c5d-8fa7-8aa3b6cefd98",
+      "edge_type": "chosen",
+      "rationale": "Selected standalone API client for better separation of concerns"
+    },
+    {
+      "from_change_id": "b1fc7db7-e586-4848-8860-c694a9901c65",
+      "to_change_id": "8680b9e3-172a-4c5d-8fa7-8aa3b6cefd98",
+      "edge_type": "chosen",
+      "rationale": "Implementing this option"
+    },
+    {
+      "from_change_id": "8680b9e3-172a-4c5d-8fa7-8aa3b6cefd98",
+      "to_change_id": "71c66181-9f9c-4871-b591-cbcf56b39a11",
+      "edge_type": "leads_to",
+      "rationale": "Next step after choosing architecture"
+    },
+    {
+      "from_change_id": "71c66181-9f9c-4871-b591-cbcf56b39a11",
+      "to_change_id": "a4432bb1-33ff-4276-9180-015034d22102",
+      "edge_type": "leads_to",
+      "rationale": "Action completed successfully"
+    },
+    {
+      "from_change_id": "a4432bb1-33ff-4276-9180-015034d22102",
+      "to_change_id": "37ffebf3-9433-459c-8b35-f094f42792e5",
+      "edge_type": "leads_to",
+      "rationale": "Next implementation step"
+    },
+    {
+      "from_change_id": "37ffebf3-9433-459c-8b35-f094f42792e5",
+      "to_change_id": "f24d1916-b87b-4d59-8bba-dfab494d20a0",
+      "edge_type": "leads_to",
+      "rationale": "Testing the implementation"
+    },
+    {
+      "from_change_id": "f24d1916-b87b-4d59-8bba-dfab494d20a0",
+      "to_change_id": "343534b9-754a-47b7-a5a6-6d5d21356000",
+      "edge_type": "leads_to",
+      "rationale": "Implementation tested and working"
+    },
+    {
+      "from_change_id": "343534b9-754a-47b7-a5a6-6d5d21356000",
+      "to_change_id": "cf545fd9-bee9-4ac0-a277-398ee0180272",
+      "edge_type": "leads_to",
+      "rationale": "Next framework implementation"
+    },
+    {
+      "from_change_id": "cf545fd9-bee9-4ac0-a277-398ee0180272",
+      "to_change_id": "6c7cd93c-27b2-4fa7-b907-069f681ad8e4",
+      "edge_type": "leads_to",
+      "rationale": "React implementation completed"
+    },
+    {
+      "from_change_id": "6c7cd93c-27b2-4fa7-b907-069f681ad8e4",
+      "to_change_id": "09acb64b-ea0c-4b64-8d9e-4e7853237c84",
+      "edge_type": "leads_to",
+      "rationale": "Next step: alternative design"
+    },
+    {
+      "from_change_id": "09acb64b-ea0c-4b64-8d9e-4e7853237c84",
+      "to_change_id": "3181ec74-b566-47b7-b2b6-122f82444122",
+      "edge_type": "leads_to",
+      "rationale": "Design decision for alternative UI"
+    },
+    {
+      "from_change_id": "1354f985-33c9-4b29-94b6-39db371b409e",
+      "to_change_id": "34909cef-5c45-4be3-831a-2a52f54304a4",
+      "edge_type": "leads_to",
+      "rationale": "Goal achieved"
+    },
+    {
+      "from_change_id": "34909cef-5c45-4be3-831a-2a52f54304a4",
+      "to_change_id": "4b673695-ebc9-445a-9815-1b8ca5483853",
+      "edge_type": "leads_to",
+      "rationale": "Project now on GitHub"
+    },
+    {
+      "from_change_id": "f88bbcc9-32a8-46d8-bc4f-962f00e5395b",
+      "to_change_id": "34a31ded-5777-4eaa-906f-37f4d720840b",
+      "edge_type": "leads_to",
+      "rationale": "Observation led to fix action"
+    },
+    {
+      "from_change_id": "34a31ded-5777-4eaa-906f-37f4d720840b",
+      "to_change_id": "9efddd1d-f46d-482e-8835-a29305365280",
+      "edge_type": "leads_to",
+      "rationale": "Fix applied successfully"
+    },
+    {
+      "from_change_id": "9efddd1d-f46d-482e-8835-a29305365280",
+      "to_change_id": "cca6bc60-2799-44a7-9ea1-d32dc32cd3e1",
+      "edge_type": "leads_to",
+      "rationale": "Documentation needed for PR"
+    },
+    {
+      "from_change_id": "cca6bc60-2799-44a7-9ea1-d32dc32cd3e1",
+      "to_change_id": "cde34b42-4269-42ae-a9f5-67a71e6b61d0",
+      "edge_type": "leads_to",
+      "rationale": "Documentation completed"
+    },
+    {
+      "from_change_id": "cde34b42-4269-42ae-a9f5-67a71e6b61d0",
+      "to_change_id": "6eac9f20-c629-4552-9e5e-5f5c606b936f",
+      "edge_type": "leads_to",
+      "rationale": "Documentation led to PR creation"
+    },
+    {
+      "from_change_id": "802f83c8-b3dc-426c-86af-2aa257d988b6",
+      "to_change_id": "4bc6b0ef-45b9-4684-a0ba-76ce34beb555",
+      "edge_type": "leads_to",
+      "rationale": "Observation led to fix"
+    },
+    {
+      "from_change_id": "4bc6b0ef-45b9-4684-a0ba-76ce34beb555",
+      "to_change_id": "62e51ccd-0423-44d3-8473-0cd0659a42e8",
+      "edge_type": "leads_to",
+      "rationale": "Fix applied successfully"
+    },
+    {
+      "from_change_id": "9efddd1d-f46d-482e-8835-a29305365280",
+      "to_change_id": "802f83c8-b3dc-426c-86af-2aa257d988b6",
+      "edge_type": "leads_to",
+      "rationale": "Initial fix revealed another issue"
+    },
+    {
+      "from_change_id": "62e51ccd-0423-44d3-8473-0cd0659a42e8",
+      "to_change_id": "34909cef-5c45-4be3-831a-2a52f54304a4",
+      "edge_type": "leads_to",
+      "rationale": "React app fully functional, contributing to project completion"
+    },
+    {
+      "from_change_id": "62e51ccd-0423-44d3-8473-0cd0659a42e8",
+      "to_change_id": "3413c2a7-6447-4a9e-864a-dd97be5d8062",
+      "edge_type": "leads_to",
+      "rationale": "React working"
+    },
+    {
+      "from_change_id": "343534b9-754a-47b7-a5a6-6d5d21356000",
+      "to_change_id": "3413c2a7-6447-4a9e-864a-dd97be5d8062",
+      "edge_type": "leads_to",
+      "rationale": "Vanilla JS working"
+    },
+    {
+      "from_change_id": "3413c2a7-6447-4a9e-864a-dd97be5d8062",
+      "to_change_id": "6eac9f20-c629-4552-9e5e-5f5c606b936f",
+      "edge_type": "leads_to",
+      "rationale": "Both implementations ready for PR"
+    },
+    {
+      "from_change_id": "6eac9f20-c629-4552-9e5e-5f5c606b936f",
+      "to_change_id": "a3b696eb-a353-4327-a12c-d6817ae38533",
+      "edge_type": "leads_to",
+      "rationale": "PR enhanced with complete story"
+    },
+    {
+      "from_change_id": "a3b696eb-a353-4327-a12c-d6817ae38533",
+      "to_change_id": "e6e31eb0-6d24-4778-b52d-52af4f25fe74",
+      "edge_type": "leads_to",
+      "rationale": "Final outcome"
+    },
+    {
+      "from_change_id": "1354f985-33c9-4b29-94b6-39db371b409e",
+      "to_change_id": "e6e31eb0-6d24-4778-b52d-52af4f25fe74",
+      "edge_type": "leads_to",
+      "rationale": "Goal fully achieved and ready for decision"
+    }
+  ]
+}
