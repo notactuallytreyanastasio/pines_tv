@@ -329,6 +329,39 @@
       "created_at": "2025-12-11T16:03:29.392990-05:00",
       "updated_at": "2025-12-11T16:03:29.392990-05:00",
       "metadata_json": "{\"branch\":\"feature/media-collection-viewer\",\"confidence\":100}"
+    },
+    {
+      "id": 31,
+      "change_id": "3413c2a7-6447-4a9e-864a-dd97be5d8062",
+      "node_type": "observation",
+      "title": "Both implementations fully functional and tested",
+      "description": null,
+      "status": "pending",
+      "created_at": "2025-12-11T16:08:35.294701-05:00",
+      "updated_at": "2025-12-11T16:08:35.294701-05:00",
+      "metadata_json": "{\"branch\":\"feature/media-collection-viewer\",\"confidence\":100}"
+    },
+    {
+      "id": 32,
+      "change_id": "a3b696eb-a353-4327-a12c-d6817ae38533",
+      "node_type": "outcome",
+      "title": "PR updated with complete decision story and audit",
+      "description": null,
+      "status": "pending",
+      "created_at": "2025-12-11T16:10:16.120152-05:00",
+      "updated_at": "2025-12-11T16:10:16.120152-05:00",
+      "metadata_json": "{\"branch\":\"feature/media-collection-viewer\",\"confidence\":100}"
+    },
+    {
+      "id": 33,
+      "change_id": "e6e31eb0-6d24-4778-b52d-52af4f25fe74",
+      "node_type": "outcome",
+      "title": "Project ready for stakeholder review and decision",
+      "description": null,
+      "status": "pending",
+      "created_at": "2025-12-11T16:10:18.556329-05:00",
+      "updated_at": "2025-12-11T16:10:18.556329-05:00",
+      "metadata_json": "{\"branch\":\"feature/media-collection-viewer\",\"confidence\":100}"
     }
   ],
   "edges": [
@@ -639,6 +672,94 @@
       "weight": 1.0,
       "rationale": "Fix applied successfully",
       "created_at": "2025-12-11T16:03:30.470294-05:00"
+    },
+    {
+      "id": 29,
+      "from_node_id": 24,
+      "to_node_id": 28,
+      "from_change_id": "9efddd1d-f46d-482e-8835-a29305365280",
+      "to_change_id": "802f83c8-b3dc-426c-86af-2aa257d988b6",
+      "edge_type": "leads_to",
+      "weight": 1.0,
+      "rationale": "Initial fix revealed another issue",
+      "created_at": "2025-12-11T16:08:32.473483-05:00"
+    },
+    {
+      "id": 30,
+      "from_node_id": 30,
+      "to_node_id": 20,
+      "from_change_id": "62e51ccd-0423-44d3-8473-0cd0659a42e8",
+      "to_change_id": "34909cef-5c45-4be3-831a-2a52f54304a4",
+      "edge_type": "leads_to",
+      "weight": 1.0,
+      "rationale": "React app fully functional, contributing to project completion",
+      "created_at": "2025-12-11T16:08:33.793495-05:00"
+    },
+    {
+      "id": 31,
+      "from_node_id": 30,
+      "to_node_id": 31,
+      "from_change_id": "62e51ccd-0423-44d3-8473-0cd0659a42e8",
+      "to_change_id": "3413c2a7-6447-4a9e-864a-dd97be5d8062",
+      "edge_type": "leads_to",
+      "weight": 1.0,
+      "rationale": "React working",
+      "created_at": "2025-12-11T16:08:36.346138-05:00"
+    },
+    {
+      "id": 32,
+      "from_node_id": 13,
+      "to_node_id": 31,
+      "from_change_id": "343534b9-754a-47b7-a5a6-6d5d21356000",
+      "to_change_id": "3413c2a7-6447-4a9e-864a-dd97be5d8062",
+      "edge_type": "leads_to",
+      "weight": 1.0,
+      "rationale": "Vanilla JS working",
+      "created_at": "2025-12-11T16:08:37.360976-05:00"
+    },
+    {
+      "id": 33,
+      "from_node_id": 31,
+      "to_node_id": 27,
+      "from_change_id": "3413c2a7-6447-4a9e-864a-dd97be5d8062",
+      "to_change_id": "6eac9f20-c629-4552-9e5e-5f5c606b936f",
+      "edge_type": "leads_to",
+      "weight": 1.0,
+      "rationale": "Both implementations ready for PR",
+      "created_at": "2025-12-11T16:08:38.752430-05:00"
+    },
+    {
+      "id": 34,
+      "from_node_id": 27,
+      "to_node_id": 32,
+      "from_change_id": "6eac9f20-c629-4552-9e5e-5f5c606b936f",
+      "to_change_id": "a3b696eb-a353-4327-a12c-d6817ae38533",
+      "edge_type": "leads_to",
+      "weight": 1.0,
+      "rationale": "PR enhanced with complete story",
+      "created_at": "2025-12-11T16:10:17.408252-05:00"
+    },
+    {
+      "id": 35,
+      "from_node_id": 32,
+      "to_node_id": 33,
+      "from_change_id": "a3b696eb-a353-4327-a12c-d6817ae38533",
+      "to_change_id": "e6e31eb0-6d24-4778-b52d-52af4f25fe74",
+      "edge_type": "leads_to",
+      "weight": 1.0,
+      "rationale": "Final outcome",
+      "created_at": "2025-12-11T16:10:19.741186-05:00"
+    },
+    {
+      "id": 36,
+      "from_node_id": 1,
+      "to_node_id": 33,
+      "from_change_id": "1354f985-33c9-4b29-94b6-39db371b409e",
+      "to_change_id": "e6e31eb0-6d24-4778-b52d-52af4f25fe74",
+      "edge_type": "leads_to",
+      "weight": 1.0,
+      "rationale": "Goal fully achieved and ready for decision",
+      "created_at": "2025-12-11T16:10:20.989915-05:00"
     }
   ]
 }
