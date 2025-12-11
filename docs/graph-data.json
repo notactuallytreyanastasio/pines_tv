@@ -230,6 +230,61 @@
       "created_at": "2025-12-11T15:56:05.850527-05:00",
       "updated_at": "2025-12-11T15:56:05.850527-05:00",
       "metadata_json": "{\"branch\":\"feature/media-collection-viewer\",\"confidence\":100,\"prompt\":\"Repository: notactuallytreyanastasio/pines_tv.git\"}"
+    },
+    {
+      "id": 22,
+      "change_id": "f88bbcc9-32a8-46d8-bc4f-962f00e5395b",
+      "node_type": "observation",
+      "title": "React app had module import issue - needed ES module exports",
+      "description": null,
+      "status": "pending",
+      "created_at": "2025-12-11T15:57:17.583125-05:00",
+      "updated_at": "2025-12-11T15:57:17.583125-05:00",
+      "metadata_json": "{\"branch\":\"feature/media-collection-viewer\",\"confidence\":90}"
+    },
+    {
+      "id": 23,
+      "change_id": "34a31ded-5777-4eaa-906f-37f4d720840b",
+      "node_type": "action",
+      "title": "Fix module exports for React/Vite",
+      "description": null,
+      "status": "pending",
+      "created_at": "2025-12-11T15:57:18.857106-05:00",
+      "updated_at": "2025-12-11T15:57:18.857106-05:00",
+      "metadata_json": "{\"branch\":\"feature/media-collection-viewer\",\"confidence\":95}"
+    },
+    {
+      "id": 24,
+      "change_id": "9efddd1d-f46d-482e-8835-a29305365280",
+      "node_type": "outcome",
+      "title": "React app now loads correctly",
+      "description": null,
+      "status": "pending",
+      "created_at": "2025-12-11T15:57:25.587997-05:00",
+      "updated_at": "2025-12-11T15:57:25.587997-05:00",
+      "metadata_json": "{\"branch\":\"feature/media-collection-viewer\",\"confidence\":95}"
+    },
+    {
+      "id": 25,
+      "change_id": "cca6bc60-2799-44a7-9ea1-d32dc32cd3e1",
+      "node_type": "action",
+      "title": "Document decision analysis for PR",
+      "description": null,
+      "status": "pending",
+      "created_at": "2025-12-11T15:59:37.601063-05:00",
+      "updated_at": "2025-12-11T15:59:37.601063-05:00",
+      "metadata_json": "{\"branch\":\"feature/media-collection-viewer\",\"confidence\":95,\"files\":[\"IMPLEMENTATION_SUMMARY.md\"]}"
+    },
+    {
+      "id": 26,
+      "change_id": "cde34b42-4269-42ae-a9f5-67a71e6b61d0",
+      "node_type": "outcome",
+      "title": "Comprehensive PR documentation complete with recommendations",
+      "description": null,
+      "status": "pending",
+      "created_at": "2025-12-11T15:59:38.821883-05:00",
+      "updated_at": "2025-12-11T15:59:38.821883-05:00",
+      "metadata_json": "{\"branch\":\"feature/media-collection-viewer\",\"confidence\":100}"
     }
   ],
   "edges": [
@@ -463,6 +518,50 @@
       "weight": 1.0,
       "rationale": "Project now on GitHub",
       "created_at": "2025-12-11T15:56:07.218152-05:00"
+    },
+    {
+      "id": 22,
+      "from_node_id": 22,
+      "to_node_id": 23,
+      "from_change_id": "f88bbcc9-32a8-46d8-bc4f-962f00e5395b",
+      "to_change_id": "34a31ded-5777-4eaa-906f-37f4d720840b",
+      "edge_type": "leads_to",
+      "weight": 1.0,
+      "rationale": "Observation led to fix action",
+      "created_at": "2025-12-11T15:57:20.331454-05:00"
+    },
+    {
+      "id": 23,
+      "from_node_id": 23,
+      "to_node_id": 24,
+      "from_change_id": "34a31ded-5777-4eaa-906f-37f4d720840b",
+      "to_change_id": "9efddd1d-f46d-482e-8835-a29305365280",
+      "edge_type": "leads_to",
+      "weight": 1.0,
+      "rationale": "Fix applied successfully",
+      "created_at": "2025-12-11T15:57:27.015592-05:00"
+    },
+    {
+      "id": 24,
+      "from_node_id": 24,
+      "to_node_id": 25,
+      "from_change_id": "9efddd1d-f46d-482e-8835-a29305365280",
+      "to_change_id": "cca6bc60-2799-44a7-9ea1-d32dc32cd3e1",
+      "edge_type": "leads_to",
+      "weight": 1.0,
+      "rationale": "Documentation needed for PR",
+      "created_at": "2025-12-11T15:59:40.246849-05:00"
+    },
+    {
+      "id": 25,
+      "from_node_id": 25,
+      "to_node_id": 26,
+      "from_change_id": "cca6bc60-2799-44a7-9ea1-d32dc32cd3e1",
+      "to_change_id": "cde34b42-4269-42ae-a9f5-67a71e6b61d0",
+      "edge_type": "leads_to",
+      "weight": 1.0,
+      "rationale": "Documentation completed",
+      "created_at": "2025-12-11T15:59:41.231141-05:00"
     }
   ]
 }
