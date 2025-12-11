@@ -144,7 +144,10 @@ class ArchiveClient {
   }
 }
 
-// Export for different module systems
+// ES module export for React/Vite
+export default ArchiveClient;
+
+// Also support CommonJS and browser globals for compatibility
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = ArchiveClient;
 }
